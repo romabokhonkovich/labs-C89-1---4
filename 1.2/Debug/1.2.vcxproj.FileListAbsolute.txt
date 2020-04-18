@@ -1,2 +1,0 @@
-d:\labs C\1.2\Debug\1.2.exe
-d:\labs C\1.2\Debug\1.2.pdb
