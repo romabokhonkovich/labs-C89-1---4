@@ -1,2 +1,0 @@
-d:\labs C\2 laba 2.2\Debug\2 laba 2.2.exe
-d:\labs C\2 laba 2.2\Debug\2 laba 2.2.pdb
