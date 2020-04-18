@@ -1,0 +1,2 @@
+d:\labs C\2.1.2\Debug\2.1.2.exe
+d:\labs C\2.1.2\Debug\2.1.2.pdb

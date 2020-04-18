@@ -1,0 +1,2 @@
+D:\labs C\4.1\Debug\4.1.exe
+D:\labs C\4.1\Debug\4.1.pdb
