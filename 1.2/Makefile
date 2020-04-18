@@ -12,4 +12,4 @@ run:
 	$(NAME_PART).exe
 
 clean:
-	git clean -x -n
+	git clean -x -f
