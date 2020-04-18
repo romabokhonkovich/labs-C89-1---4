@@ -1,7 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<locale.h>
 #include<time.h>
+#include<stdlib.h>
 
 int Readint()
 {
@@ -22,15 +21,17 @@ int main()
 	printf("size of array = ");
 	int size = Readint();
 	int** arr = malloc( sizeof(int*) * size);
-
-	for (int i = 0; i < size; i++)
+        int i;
+        int j;
+	for (i = 0; i < size; i++)
 	{
 		arr[i] = malloc(sizeof(int) * size);
 	}
 
-	for (int i = 0; i < size; i++)
+	for ( i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
+      
+               for (j = 0; j < size; j++)
 		{
 			arr[i][j] = rand() % 10;
 			printf("%3d", arr[i][j]);
@@ -39,9 +40,9 @@ int main()
 	}
 	printf("\n");
 	printf("\n");
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
+		for (j = 0; j < size; j++)
 		{
 			if ( i + j == size - 1 || i == j)
 			{
@@ -53,20 +54,20 @@ int main()
 		printf("\n");
 	}
 	int newsize = (size - 1) / 2;
-	for (int i = 0; i < newsize; i++) //вертикальные четверти 
+	for (i = 0; i < newsize; i++)  
 	{
 		int p = i + 1;
-		for (int j = p; j < size - p; j++)
+		for (j = p; j < size - p; j++)
 		{
 			int temp = arr[i][j];
 			arr[i][j] = arr[size - (i + 1)][j];
 			arr[size - (i + 1)][j] = temp;
 		}
 	}
-	for (int j = 0; j < newsize; j++) //горизонтальные четверти
+	for (j = 0; j < newsize; j++)
 	{
 		int p = j + 1;
-		for (int i = p; i < size - p; i++)
+		for (i = p; i < size - p; i++)
 		{
 			int temp = arr[i][j];
 			arr[i][j] = arr[i][size - j - 1];
@@ -74,9 +75,10 @@ int main()
 		}
 	}
 	printf("\n");
-	for (int i = 0; i < size; i++)
+
+	for ( i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
+		for (j = 0; j < size; j++)
 		{
 			if (i + j == size - 1 || i == j)
 			{
@@ -88,9 +90,9 @@ int main()
 		printf("\n");
 	}
 	printf("\n");
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
+		for (j = 0; j < size; j++)
 		{
 			printf("%3i", arr[i][j]);
 		}
