@@ -1,3 +1,0 @@
-﻿  4.2.cpp
-c:\Users\Dell\source\repos\4.2\4.2.cpp(120,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  4.2.vcxproj -> C:\Users\Dell\source\repos\4.2\x64\Debug\4.2.exe
